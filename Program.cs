@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using recapC;
+using System.Security.Cryptography.X509Certificates;
 
 internal class Program
 {
@@ -20,6 +21,9 @@ internal class Program
         ReverseString(nume);
         int max = MaxNumber(lista_numere);
         Console.WriteLine(max);
+        // oop 
+        Car c1 = new Car(1, "Renault", 2008, "Robert");
+        c1.calculCombustibil(60, 100);
         
 
     }
@@ -60,5 +64,5 @@ internal class Program
         return max;
     }
 
-    public static 
+    
 }
